@@ -1,0 +1,32 @@
+<ng-container *ngIf="usersViews$ | async as userViews">
+  <button (click)="addUser()">Add user</button>
+
+  <form>
+    <input name="name" type="text" [(ngModel)]="name" placeholder="Name">
+    <select name="status" [(ngModel)]="status">
+      <option [ngValue]=true>active</option>
+      <option [ngValue]=false>inactive</option>
+    </select>
+    <button (click)="addUser()">Add user</button>
+  </form>
+
+  <ul>
+    <li *ngFor="let user of userViews.users">
+      <a [routerLink]="['/users', user.id]">
+        {{ user.name }}
+      </a>
+    </li>
+  </ul>
+
+  <h2>Active users</h2>
+  <ul>
+    <li *ngFor="let user of userViews.activeUsers | alphabetical">
+      <a [routerLink]="['/users', user.id]">
+        {{ user.name }}
+      </a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
+</ng-container>

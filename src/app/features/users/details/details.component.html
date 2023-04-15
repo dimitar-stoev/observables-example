@@ -1,0 +1,4 @@
+<ng-container *ngIf="user$ | async as user">
+  <h2>{{user.name}}</h2>
+  <p>{{user.description}}</p>
+</ng-container>

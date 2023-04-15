@@ -1,27 +1,37 @@
-# Amilaza
+## 🕵️‍♀️ How I Use Observables in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+This is a demo project to show how I use Observables in Angular. It's not a tutorial, but rather a reference. I hope it helps you too.
 
-## Development server
+### 📦 Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```bash
+npm install
+```
 
-## Code scaffolding
+### 🚀 Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm run start
+```
 
-## Build
+Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📖 Blog article
 
-## Running unit tests
+I wrote a blog article about this project. You can read it here: [How I Use Observables in Angular](https://www.stoev.dev/blog/how-i-work-with-observables-in-angular)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🚀 Technologies
 
-## Running end-to-end tests
+- Angular
+- TypeScript
+- RxJS
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🎉 Features
 
-## Further help
+- Displays a list of users
+- Allows to filter the list of users
+- Sorts the list of users alphabetically
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📄 License
+
+This project is licensed under the MIT License
